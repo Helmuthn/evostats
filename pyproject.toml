@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["evostats"]
+
+[project]
+name = "evostats"
+version = "0.0.1"
+authors = [
+  { name="Helmuth Naumer", email="hnaumer2@illinois.edu" },
+]
+description = "Statistically Rigorous ODE Forecasting"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research",
+    "Development Status :: 2 - Pre-Alpha",
+]
+dependencies = [
+    "jax>=0.4.3",
+    "diffrax>=0.3.0",
+    "equinox",
+    "jaxtyping",
+    "sympy",
+    "beartype"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/helmuthn/evostats"
+"Documentation" = "https://www.helmuthnaumer.com/evostats/"
+"Bug Tracker" = "https://github.com/helmuthn/evostats/issues"
+
+[tool.ruff]
+ignore = ["F722"]
