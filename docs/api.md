@@ -2,6 +2,6 @@
 
 ## Basic
 
-::: evostat.basic.add
+::: evostats.basic.add
 
 
